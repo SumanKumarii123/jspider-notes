@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Personal Information</legend>
+        <!---Default value in input box using value-->
+        <label for="cn">Company Name :</label>
+        <input tye="text" id="cn" value="google" name="cn" disabled readonly>
+        <br><br>
+        <label for="name">Username</label>
+        <input type="text" id="name" name="username" minlength="4" autofocus maxlength="20" required autocomplete="off" size="40" pattern="[a-z0-9]{5, }">
+        <!---[a-z] it will accept capital and small letters both-->
+        <br><br>
+        <label for="pass">Password</label>
+        <input type="password" id="pass" name="password" placeholder="example@gmail.com" autocomplete="off">
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" min="16" max="25" step="2">
+        <br><br>
+        <label for="tel">Contact</label>
+        <input type="tel" id="tel" name="tel" pattern="[0-9]{10}">
+        <br><br>
+        <label for="gender">Gender :</label>
+        Male :<input type="radio" name="gender" value="male" checked>
+        Female :<input type="radio" name="gender" value="female">
+        Others :<input type="radio" name="gender" value="others">
+        <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Additional Information</legend>
+        <label for="">Skills :</label>
+        <!-----name is used as a container----->
+        HTML<input type="checkbox" name="skill1" value="html" checked disabled>
+        CSS<input type="checkbox" name="skill2" value="css">
+        JS<input type="checkbox" name="skill3" value="js">
+        <br><br>
+        <label for="v">Select a vehicle</label>
+        <select name="vehicle" id="v" multiple>
+            <optgroup label="cars">
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Range Rover" selected>Range Rover</option>
+            </optgroup>
+             <optgroup label="bikes">
+                <option value="BMW">BMW</option>
+                <option value="Jawa">Jawa</option>
+                <option value="Splendor">Splendor</option>
+            </optgroup>
+             <optgroup label="cycle">
+                <option value="Hero">Hero</option>
+                <option value="Atlas">Atlas</option>
+                <option value="Hercules">Hercules</option>
+            </optgroup>
+        </select>
+        <br><br>
+        <label for="st">State : </label>
+        <input type="text" list="state" id="st" name="state">
+        <datalist id="state">
+            <option value="Delhi">Delhi</option>
+             <option value="Punjab">Punjab</option>
+              <option value="Haryana">Haryana</option>
+        </datalist>
+        <br>
+        <br>
+        <label for="">Upload Your Resume : </label>
+        <input type="file" accept=".pdf,.jpeg">
+        </fieldset>
+        <br>
+        <fieldset>
+            <label for="">Feedback : </label>
+            <legend>Feedback</legend>
+            <textarea name="comment" id=""></textarea>
+            <br><br>
+            <!---When will be reload then form will be submit otherwise no-->
+            <!----All button will be work as a submit button without giving any functionality-->
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            <button type="button">Button</button>
+        </fieldset>
+    </form>
+</body>
+</html>
+
+<!---http://127.0.0.1:5500/Form/Task1.html?username=Suman+Kumari&password=gjhkjkl&email=suman2004pes%40gmail.com&age=21&gender=female-->
+

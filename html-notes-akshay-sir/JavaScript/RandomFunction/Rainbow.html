@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="rain">RAINBOW</h1>
+    <script>
+        let colors=['violet','indigo','blue','green','yellow','orange','red']
+        let h1=document.querySelector('.rain')
+        let content=h1.textContent;
+
+        h1.innerHTML=''
+        content.split('').forEach((el,i)=>{
+            let span=document.createElement('span')
+            span.textContent=el
+            span.style.color=colors[i]
+            h1.appendChild(span)
+        })
+       
+       
+    </script>
+</body>
+</html>

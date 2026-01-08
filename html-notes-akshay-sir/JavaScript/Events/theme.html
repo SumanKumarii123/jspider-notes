@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dark{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <Button class="themeBtn" onclick="changeTheme()">Dark</Button> 
+    <h1>Times Of India</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, mollitia a, consequuntur repellendus pariatur quidem ea eos earum ipsum, molestias reiciendis. Commodi culpa aut, saepe nesciunt in necessitatibus natus dignissimos.
+    Alias, recusandae harum temporibus, asperiores optio corrupti error corporis iusto hic unde enim tempore eveniet similique? Veniam iure, at pariatur accusantium sed vitae eum, minus laudantium molestiae cum mollitia atque.
+    Explicabo, officiis hic illum voluptas sequi expedita aut iste fugiat repudiandae reprehenderit minus consequuntur vel atque, tempore dolore maiores error nihil aspernatur! Aspernatur qui vel nihil amet accusamus nisi tempore.
+    Alias, eum quia atque minus corporis, delectus, placeat quas doloribus neque distinctio deserunt earum pariatur dicta et. Pariatur tempora nostrum sed in doloremque modi reprehenderit unde omnis beatae. At, vitae.
+    Minima enim, ex facilis corporis voluptas illum veritatis quaerat quam velit, fugiat quia atque a quis doloribus debitis neque eum tempore recusandae, modi commodi quidem deleniti soluta facere inventore. Molestias?</p>
+    <script>
+        let btn=document.querySelector('.themeBtn')
+        let body=document.body;
+        function changeTheme(){
+            body.classList.toggle('dark')
+            if(btn.innerText=='Dark'){
+                btn.innerText='Light'
+            }else{
+                btn.innerText='Dark'
+            }
+        }
+    </script>
+</body>
+</html>

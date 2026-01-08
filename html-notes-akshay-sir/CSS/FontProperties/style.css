@@ -1,0 +1,23 @@
+/* search google font in google and then get font and then get embed code and then select any option link or import option
+when i will select from google import option then i will import in css part 
+when i will select link option then i will add link in html part just before css */
+
+@import url('https://fonts.googleapis.com/css2?family=Momo+Signature&display=swap');
+
+.one{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 10;
+    font-family: sans-serif;
+}
+
+.two{
+    font-family: "Stack Sans Notch", sans-serif;
+    font-weight:400 ;
+    font-variant:small-caps ;
+}
+
+.three{
+    font-family:"Momo Signature", cursive ;
+    font-weight:500 ;
+}

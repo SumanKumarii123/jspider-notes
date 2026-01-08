@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* section p{
+            background-color: blueviolet;
+        } */
+        /* #innerUl>li{
+        background-color:yellow;
+        } */
+         /* ul>ol>ul>li{
+         background-color:yellow;
+         } */
+         /* #outer>ol>li{
+            background-color: red;
+          } */
+          div+p{
+            background-color: brown;
+           } 
+           /* div~p{
+                background-color: brown;
+            } */
+    </style>
+</head>
+<body>
+    <section>
+        <p>para-1</p>
+        <div>Div</div>
+      <!----  <aside>aside</aside>----->       
+       <p>para-2</p>
+        <p>para-3</p>
+        <a href="#">Amazon</a>
+        <p>para-4</p>
+    </section>
+   <ol>
+        <li id="outer">list-1</li>
+        <li>list-2</li>
+        <li>list-3</li>
+        <ol>
+            <li>list-item-1</li>
+            <li>list-item-2</li>
+            <ol id="innerUl">
+                <li>nested-list-item1</li>
+                <li>nested-list-item2</li>
+                <li>nested-list-item3</li>
+                <li>nested-list-item4</li>
+            </ol>
+            <li>list-item-3</li>
+            <li>list-item-4</li>
+        </ol>
+        <li>list-4</li>
+        <li>list-5</li>
+        <li>list-6</li>
+    </ol>
+    <div>
+        Div
+            <p>para-1</p>
+            <article>Arcticle</article>
+            <aside>Aside
+                <p>para in aside</p>
+            </aside>
+    </div>
+    <section>
+        section
+        <p>para-1</p>
+        <article>Article</article>
+         <aside>Aside
+                <p>para in aside</p>
+            </aside>
+    </section> 
+</body>
+</html>

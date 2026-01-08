@@ -1,0 +1,22 @@
+.cd{
+    height: 100px;
+    width: 200px;
+    background-color: #ff00ff;
+}
+.cd:hover+.bc{
+   background-color: rgb(0, green, blue);
+}
+.bc{
+    height: 100px;
+    width: 200px;
+    background-color: rgb(0, green, blue);
+}
+.bc:hover{
+  background-color: hsla(120, red, 50%, 1);
+}
+.ab{
+     height: 100px;
+    width: 200px;
+    
+   background-color:aqua
+}

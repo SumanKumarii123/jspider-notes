@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* #box{
+            background-color: brown;
+            height: 400px;
+            width: 400px;
+         }
+            it will change the size of div after hover
+
+            #box:hover{
+            background-color: yellow;
+            height: 500px;
+            width : 500px;
+            } */
+            /* id and pseudo first child is not working as like same because when child will be deleted using javascript then i will use pseudo then it will consider next next as a child but i will use id then it will not consider next child after deleting */
+             /*li:first-child{
+                background-color: red;
+             }
+             li:last-child{
+                background-color: red;
+             }
+             li:nth-child(4){
+                  background-color: blue;
+             } */
+             li:nth-child(even){
+                background-color: yellow;
+             }
+             li:nth-child(odd){
+                background-color:aqua;
+             }
+            /* #one{
+                background-color: red;
+             } */
+    </style>
+</head>
+<body>
+    <ol>
+        <li id="one">list-item-1</li>
+        <li>list-item-2</li>
+        <li>list-item-3</li>
+        <li>list-item-4</li>
+        <li>list-item-5</li>
+        <li>list-item-6</li>
+        <!--when i will delete this anchor tag then last-child will execute otherwise no-->
+        <a href="#">Amazon</a>
+    </ol>
+    <!---<div id="box">
+    <div> -->
+</body>
+</html>

@@ -1,0 +1,26 @@
+.box2{
+    height: 600px;
+    width: 600px;
+    border: solid;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIVGwIoeqt4inObPJs4G1JOcjUV0emtm-xoA&s");
+    background-repeat: repeat-y;
+    background-size: 500px 300px;
+    background-position: right bottom;
+}
+.box{
+    background-color: yellow;
+    color: black;
+    height: 300px;
+    width: 400px;
+}
+.box1{
+    height: 300px;
+    width: 300px;
+   border: solid;
+   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWoQPrJvAncDxIlbv-IXDjOL9EEgkUU8qfVw&s");
+   /*bacground-size:auto; */
+   background-size: contain;
+   background-size: cover;
+   background-repeat: no-repeat;
+
+}

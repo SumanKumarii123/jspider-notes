@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /* p::first-letter{
+        font-size: 70px;
+       }
+       p::first-line{
+        background-color: yellow;
+       }
+       h1::selection{
+        background-color: yellow;
+        color: black;
+       } */
+        /* no can copy the data of your text */
+        p,h1{
+            user-select:none;
+        } 
+        /* we should remember to change the radio or checkbox color using accent:color: */
+        input{
+            accent-color: brown;
+        }
+        .email::placeholder{
+            color: blueviolet;
+        }
+        /* Windows + . to choose emoji */
+        h1::before{
+            content: "The";
+        }
+         h1::after{
+            content: "😊";
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <input class="email" type="text" placeholder="Enter Name...." />
+        ON<input type="radio" />
+        OFF<input type="checkbox" />
+        <h1>Times Of India</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit vitae ipsa rem nihil adipisci distinctio dolorem perferendis minus! Totam rerum dolores harum natus assumenda error molestias laudantium sint voluptatem minus!
+        Quibusdam ducimus consequuntur quam, ex unde, laudantium repudiandae eius quo voluptates ipsum omnis, nihil non ea atque. Rem perferendis, odit incidunt dolorum debitis id excepturi, reprehenderit consequuntur nulla, beatae quasi!
+        Aut molestias ut quasi ipsum voluptatum voluptate soluta blanditiis maxime aliquam exercitationem, quos modi sed voluptas ad nemo debitis saepe animi quam eaque totam. Aut quo corporis ea odio doloremque.
+        Fugiat nihil placeat magni exercitationem qui amet deserunt, commodi velit? Sit nemo aspernatur vero a, voluptates explicabo architecto amet nostrum, voluptas, eveniet eligendi dolorem doloremque asperiores. Eaque obcaecati illo corrupti.</p>
+    </center>
+</body>
+</html>
